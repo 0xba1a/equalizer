@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sureify coke-studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery_ui.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery_ui.js"></script>
+    <!-- Custom script -->
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body onload="loadAnim()">
+    <div class="container container-fluid">
+        <nav class="navbar-custom">
+            <a href="//eastrivervillage.com" id="a-home-icon">
+                <img src="./image/favicon.png" style="height:48px; width:48px;" />
+            </a>
+        </nav>
+
+        <!-- Player widget -->
+        <div class="row" id="div-player-container">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 center-block" style="float: none">
+                <div id="div-eq-container" style="position:relative;" class="hideIfNoApi">
+                    <div id="visualisation">
+                    </div>
+                    <div id="div-vis-round" class="center-block" style="position: relative; top: 0%; width: 30vmin; height: 30vmin;">
+                        <div>
+                            <div style="position: absolute; width: 4%; height:4%; top:48%; left: 48%; background:#bf1aee; border-radius: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TODO: Movie mp3 file to local server-->
+                <audio crossorigin="anonymous" controls="controls" preload="auto" id="player" type="audio/mpeg" src="asset/1.mp3"></audio>
+            </div>
+        </div>
+</body>
+
+</html>
